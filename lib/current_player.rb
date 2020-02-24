@@ -1,16 +1,13 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-def input_to_index(user_input)
-  user_input.to_i - 1
-end
-
 def turn_count(board)
+  counter = 0
   board.each do |turn|
-    counter = 0
-    if board[index] == "X" || board[index] == "O"
+    if turn == "X" || turn == "O"
       counter += 1
     end
   end
+  return counter
 end
 
 def current_player(board)
