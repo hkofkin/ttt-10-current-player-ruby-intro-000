@@ -6,8 +6,6 @@ end
 
 def turn_count(board)
   board.each do |turn|
-#    user_input = gets.strip
-    index = input_to_index(user_input)
     counter = 0
     if board[index] == "X" || board[index] == "O"
       counter += 1
